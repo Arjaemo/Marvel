@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="Poster/favicon.png.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Universe - Ople Arjae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            background: url(Poster/Galactus.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #d32f2f, #ff5722);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: transparent;
+        }
+
+        .nav-buttons a {
+            background: black;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .nav-buttons a:hover {
+            background: rgb(0, 0, 0);
+            transform: scale(1.05);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .hero {
+            background: rgba(0, 0, 0, 0.959);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hero:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgb(0, 0, 0);
+        }
+
+        .hero img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .hero h3 {
+            margin-top: 10px;
+        }
+
+        .hero button {
+            background: rgb(150, 0, 0);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .hero button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                padding: 10px;
+            }
+
+            .hero {
+                padding: 10px;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .header {
+                font-size: 20px;
+            }
+
+            .hero img {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .hero {
+                padding: 8px;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 8px;
+                padding: 10px;
+            }
+
+            .header {
+                font-size: 18px;
+            }
+
+            .hero img {
+                height: 180px;
+            }
+
+            .nav-buttons a {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+        }
+
+    </style>
+    <script>
+        function showMessage(hero) {
+            alert(hero + " is one of the most iconic Marvel superheroes!");
+        }
+    </script>
+</head>
+<body>
+    <div class="header">Marvel Universe Characters</div>
+    
+    <div class="nav-buttons">
+        <a href="index.html">🏠 Home</a>
+        <a href="Heroes.html">🦸‍♂️ Characters</a>
+        <a href="Locations.html">🌍 Locations</a>
+    </div>
+    
+    <div class="container">
+        <div class="hero">
+            <img src="Heroes/Iron Man.jpg" alt="Iron Man">
+            <h3>Iron Man</h3>
+            <p>Tony Stark fights against Thanos with his advanced armor.</p>
+            <button onclick="showMessage('Iron Man')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Captain.jpg" alt="Captain America">
+            <h3>Captain America</h3>
+            <p>Steve Rogers wields his shield in battle.</p>
+            <button onclick="showMessage('Captain America')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Thorr.png" alt="Thor">
+            <h3>Thor</h3>
+            <p>The God of Thunder wields Stormbreaker.</p>
+            <button onclick="showMessage('Thor')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Strange.jpg" alt="Doctor Strange">
+            <h3>Doctor Strange</h3>
+            <p>Uses the Time Stone to foresee outcomes.</p>
+            <button onclick="showMessage('Doctor Strange')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Spider.jpg" alt="Spider-Man">
+            <h3>Spider-Man</h3>
+            <p>Peter Parker swings through New York City.</p>
+            <button onclick="showMessage('Spider-Man')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Hulk.jpg" alt="Hulk">
+            <h3>Hulk</h3>
+            <p>Bruce Banner transforms into the unstoppable Hulk.</p>
+            <button onclick="showMessage('Hulk')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Black Panther.png" alt="Black Panther">
+            <h3>Black Panther</h3>
+            <p>King T’Challa protects Wakanda with his Vibranium suit.</p>
+            <button onclick="showMessage('Black Panther')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Wanda.jpg" alt="Wanda Maximoff">
+            <h3>Wanda Maximoff</h3>
+            <p>The Scarlet Witch manipulates reality with chaos magic.</p>
+            <button onclick="showMessage('Wanda Maximoff')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Vision.jpg" alt="Vision">
+            <h3>Vision</h3>
+            <p>An android powered by the Mind Stone.</p>
+            <button onclick="showMessage('Vision')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Ant-man.jpg" alt="Ant-Man">
+            <h3>Ant-Man</h3>
+            <p>Scott Lang shrinks and grows with Pym Particles.</p>
+            <button onclick="showMessage('Ant-Man')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Winter Soldier.png" alt="Winter Soldier">
+            <h3>Winter Soldier</h3>
+            <p>Bucky Barnes is a skilled assassin with a cybernetic arm.</p>
+            <button onclick="showMessage('Winter Soldier')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/War Machine.jpg" alt="War Machine">
+            <h3>War Machine</h3>
+            <p>James Rhodes fights using his heavily armed War Machine suit.</p>
+            <button onclick="showMessage('War Machine')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Black Widow.jpg" alt="Black Widow">
+            <h3>Black Widow</h3>
+            <p>Natasha Romanoff is a master spy and hand-to-hand combatant.</p>
+            <button onclick="showMessage('Black Widow')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Loki.jpg" alt="Loki">
+            <h3>Loki</h3>
+            <p>The God of Mischief uses illusion and trickery to manipulate.</p>
+            <button onclick="showMessage('Loki')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Rocket-Racoon.jpg" alt="Rocket Raccoon">
+            <h3>Rocket Raccoon</h3>
+            <p>A genetically enhanced raccoon with expert marksmanship.</p>
+            <button onclick="showMessage('Rocket Raccoon')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Drax.jpg" alt="Drax">
+            <h3>Drax</h3>
+            <p>A warrior seeking revenge for his family's death.</p>
+            <button onclick="showMessage('Drax')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Gamora.jpg" alt="Gamora">
+            <h3>Gamora</h3>
+            <p>The most dangerous woman in the galaxy, trained by Thanos.</p>
+            <button onclick="showMessage('Gamora')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Thanos.jpg" alt="Thanos">
+            <h3>Thanos</h3>
+            <p>The Mad Titan seeks balance through the power of the Infinity Stones.</p>
+            <button onclick="showMessage('Thanos')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Falcon.jpg" alt="Falcon">
+            <h3>Falcon</h3>
+            <p>Sam Wilson soars through the sky with his high-tech wings.</p>
+            <button onclick="showMessage('Falcon')">Learn More</button>
+        </div>
+        <div class="hero">
+            <img src="Heroes/Hawkeye.jpg" alt="Hawkeye">
+            <h3>Hawkeye</h3>
+            <p>Clint Barton is a master archer and Avenger.</p>
+            <button onclick="showMessage('Hawkeye')">Learn More</button>
+        </div>
+    </div>
+    
+</body>
+</html>

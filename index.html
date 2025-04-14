@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="Poster/favicon.png.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Infinity War</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(Poster/Marvel\ Space.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #d32f2f, #ff5722);
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+        }
+
+        .nav-buttons a {
+            background: black;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .nav-buttons a:hover {
+            background: rgb(50, 50, 50);
+            transform: scale(1.05);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .poster-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .poster img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .poster img:hover {
+            transform: scale(1.05);
+        }
+
+        .description-box {
+            background: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+            width: 500px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .description-box strong {
+            font-size: 18px;
+            color: #ff5722;
+        }
+
+        .facts-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 900px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .facts-section h2 {
+            color: #ff5722;
+            text-align: center;
+        }
+
+        .facts-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .facts-section li {
+            margin: 10px 0;
+        }
+
+        /* ✅ Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+                background-size: cover;
+            }
+
+            .header {
+                font-size: 20px;
+                padding: 15px;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center; /* Added this line for centering */
+                align-items: center; /* Ensures buttons are centered */
+            }
+
+            .nav-buttons a {
+                width: 80%;
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .poster-section {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .poster img {
+                width: 90%;
+                height: auto;
+            }
+
+            .description-box {
+                width: 90%;
+                height: auto;
+                font-size: 15px;
+                padding: 15px;
+            }
+
+            .facts-section {
+                width: 90%;
+                font-size: 15px;
+                padding: 15px;
+            }
+
+            .facts-section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Marvel Infinity War Saga</div>
+    
+    <div class="nav-buttons">
+        <a href="index.html">🏠 Home</a>
+        <a href="Heroes.html">🦸‍♂️ Characters</a>
+        <a href="Locations.html">🌍 Locations</a>
+    </div>
+
+    <div class="container">
+        <div class="poster-section">
+            <div class="poster">
+                <img src="Poster/Avengers.jpg" alt="The Avengers">
+            </div>
+            <div class="description-box">
+                <strong>The Avengers (2012)</strong><br>
+                Earth's Mightiest Heroes—Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye—team up to stop Loki from conquering the world with the power of the Tesseract, leading to an epic battle in New York City.
+            </div>
+        </div>
+
+        <div class="poster-section">
+            <div class="poster">
+                <img src="Poster/Age of Ultron.jpg" alt="Age of Ultron">
+            </div>
+            <div class="description-box">
+                <strong>Avengers: Age of Ultron (2015)</strong><br>
+                Tony Stark and Bruce Banner create Ultron, an advanced AI meant to bring peace, but it turns against humanity. The Avengers must stop Ultron from executing his plan to wipe out mankind, introducing new heroes like Scarlet Witch and Vision.
+            </div>
+        </div>
+
+        <div class="poster-section">
+            <div class="poster">
+                <img src="Poster/Infinity War.jpg" alt="Infinity War">
+            </div>
+            <div class="description-box">
+                <strong>Avengers: Infinity War (2018)</strong><br>
+                The Avengers and the Guardians of the Galaxy unite to battle the Mad Titan, Thanos, as he seeks to collect all six Infinity Stones. Their desperate struggle to stop him leads to devastating consequences for the entire universe.
+            </div>
+        </div>
+        
+        <div class="poster-section">
+            <div class="poster">
+                <img src="Poster/Endgame.jpg" alt="Endgame">
+            </div>
+            <div class="description-box">
+                <strong>Avengers: Endgame (2019)</strong><br>
+                Five years after Thanos’ snap wiped out half of all life, the remaining Avengers devise a daring time heist to retrieve the Infinity Stones from the past and undo the catastrophe, leading to an ultimate showdown against Thanos and his army.
+            </div>
+        </div>
+    </div>
+
+    <div class="facts-section">
+        <h2>Fun Facts About the Avengers Movies</h2>
+        <ul>
+            <li>🔹 <strong>The Avengers (2012):</strong> The famous "Shawarma Scene" was filmed after the premiere!</li>
+            <li>🔹 <strong>Age of Ultron (2015):</strong> James Spader performed motion capture for Ultron.</li>
+            <li>🔹 <strong>Infinity War (2018):</strong> The phrase "We have a Hulk" is a callback to the first Avengers movie.</li>
+            <li>🔹 <strong>Endgame (2019):</strong> Robert Downey Jr. improvised the "I am Iron Man" line in the final battle.</li>
+        </ul>
+    </div>
+</body>
+</html>
